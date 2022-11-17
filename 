@@ -1,0 +1,62 @@
+[33mcommit ee3769ee3e7a7a12a9227112b0d046b970cdf93f[m[33m ([m[1;36mHEAD -> [m[1;32mlesson-3-1[m[33m)[m
+Author: Alexis <alexdmejia1@gmail.com>
+Date:   Wed Nov 16 14:30:07 2022 -0700
+
+    following Mary Alice lesson
+
+[33mcommit 21691387cba36cdb43109e172fdbe216c82664d7[m[33m ([m[1;31morigin/lesson-3-1[m[33m)[m
+Author: Alexis <alexdmejia1@gmail.com>
+Date:   Sun Nov 6 20:11:44 2022 -0700
+
+    lesson 3-1 assigment, I added new personal information
+
+[33mcommit 4d09f62aff680964c734ad84aaa922488ef742f2[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: ee29a51 085d965
+Author: alexdmejia <103967304+alexdmejia@users.noreply.github.com>
+Date:   Sun Nov 6 19:59:36 2022 -0700
+
+    Merge pull request #1 from alexdmejia/lesson-2-1
+    
+    pull request
+
+[33mcommit 085d9657084af3b7e75f927592d516a031e22503[m[33m ([m[1;31morigin/lesson-2-1[m[33m, [m[1;32mlesson-2-1[m[33m)[m
+Author: Alexis <alexdmejia1@gmail.com>
+Date:   Tue Nov 1 18:33:48 2022 -0600
+
+    making index file
+
+[33mcommit ee29a51bb44b6b63017a59768fc1cf38879d7a87[m
+Author: Mary Alice Moore <46582241+mamooredesigns@users.noreply.github.com>
+Date:   Mon Sep 19 16:48:09 2022 -0400
+
+    Update how-to-submit.md
+
+[33mcommit f6a64b48d256d9d18d4040d1b6099f7c279aa23c[m
+Author: Mary Alice Moore <mamooredesigns@gmail.com>
+Date:   Mon Sep 19 16:42:01 2022 -0400
+
+    first commit
+
+[33mcommit 6f5dba26808b1733ddc87ac98a159423da795536[m
+Author: Mary Alice Moore <mamooredesigns@gmail.com>
+Date:   Sun Jul 17 12:18:31 2022 -0400
+
+    updating instructions
+
+[33mcommit f025e61781b88a002d43ea2352e6ecd58775580d[m
+Author: Mary Alice Moore <mamooredesigns@gmail.com>
+Date:   Sun Jul 17 12:15:22 2022 -0400
+
+    updating instructions
+
+[33mcommit 0643b4428e830a6d2dcac03b36b6c1b686b89a92[m
+Author: Mary Alice Moore <mamooredesigns@gmail.com>
+Date:   Sun Jul 17 12:12:12 2022 -0400
+
+    updated submit instructions
+
+[33mcommit 17f92b5d5386d3e64bf756336412939d1aef7789[m
+Author: Mary Alice Moore <mamooredesigns@gmail.com>
+Date:   Sun Jul 17 11:58:44 2022 -0400
+
+    created class repo
