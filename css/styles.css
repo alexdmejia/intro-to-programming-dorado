@@ -1,5 +1,9 @@
 blockquote.socrates {
     margin: 0px;
 }
+form div+div {
+    margin-top: 10px; /*<br>*/
+    margin-bottom: 10px;
+}
 
 
