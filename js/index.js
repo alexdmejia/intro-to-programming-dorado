@@ -2,7 +2,7 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer= document.querySelector('footer');
 const copyright = document.createElement('p');
-copyright.innerHTML= "Alexis Mejia " + thisYear;
+copyright.innerHTML= "Alexis Mejia, " + thisYear + ' \u00A9'; //how to append this quote?
 footer.appendChild(copyright);
 const skills =[
     "HTML",
