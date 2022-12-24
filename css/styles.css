@@ -1,3 +1,42 @@
+* { 
+    text-align: center;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: bisque;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+  }
+section{
+  margin: 15%;
+  padding: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+li {
+    list-style-position: inside;
+}
+
+header {
+    letter-spacing: 2px;
+    display: inline-block;
+  /*  margin-top: -20px; works like display with similar purpose*/
+    width: 100%;
+    text-align: center;
+    background: #146363;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+img#developer-alexis {
+  background-size: 150px;
+  width: 250px;
+  height: auto;
+  border: 2px solid;
+  color:rgb(204, 181, 50);
+}
 blockquote.socrates {
     margin: 0px;
 }
@@ -5,5 +44,35 @@ form div+div {
     margin-top: 10px; /*<br>*/
     margin-bottom: 10px;
 }
-
-
+.nav{
+  background-color: none;
+  display:  inline-block;
+  margin-top: 12px;
+  margin-left: auto;
+  float: none;
+}
+.menu-item {
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius:  15px 50px; 
+  border: 3px groove rgb(204, 181, 50);
+  display: inline-table;
+  margin-top: 10px;
+  margin-left: auto;
+  float: none;
+  width: 110px;
+  height: 100%;
+}
+.menu-item:hover{
+  background-color: bisque;
+}
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  color: none;
+}
+a:hover{
+  text-decoration: underline;
+}

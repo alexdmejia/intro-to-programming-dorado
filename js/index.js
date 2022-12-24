@@ -4,17 +4,18 @@ const footer= document.querySelector('footer');
 const copyright = document.createElement('p');
 copyright.innerHTML= "Alexis Mejia, " + thisYear + ' \u00A9'; //how to append this quote?
 footer.appendChild(copyright);
-const skills =[
+const Skills =[
     "HTML",
     "Javascript",
-    "Github",
-    "CSS"
+    "CSS",
+    "Github"
+
 ];
-const skillsSection = document.querySelector("#skills");
+const skillsSection = document.querySelector("#Skills");
 const skillsList = skillsSection.querySelector('ul');
-for(i=0; i < skills.length; i++){
+for(i=0; i < Skills.length; i++){
     let skill = document.createElement('li');
-    skill.innerHTML = skills[i];
+    skill.innerHTML = Skills[i];
     skillsList.appendChild(skill);
 }
 
@@ -44,6 +45,11 @@ function removeMessage(e){
     listItem.remove();
 }
 
+//optional edit button //ask saul about it //when actuated the skills and copyright leave
+/*editButton.addEventListener('click', () => {
+    newMessage.contentEditable = true;  // make sure that the newMessage is just the message portion, not the email address or Remove button
+}*/
+//4.4   
 
 
 
