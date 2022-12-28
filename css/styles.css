@@ -1,40 +1,42 @@
+html{
+  font-size: 100%;
+  background-color: rgba(255, 228, 196, 0.503);
+
+}
 * { 
     text-align: center;
+    
 }
-
-body {
-    padding: 0px;
-    margin: 0px;
-    background-color: bisque;
-    color: black;
-    font-family:'Times New Roman', Times, serif;
-  }
+body v
 section{
-  margin: 15%;
+  margin: 15px;
   padding: 0px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 5%;
+  margin-left: 4%;
 }
 li {
     list-style-position: inside;
 }
-
 header {
     letter-spacing: 2px;
     display: inline-block;
   /*  margin-top: -20px; works like display with similar purpose*/
     width: 100%;
     text-align: center;
-    background: #146363;
+    background: #1463639c;
     color: rgb(0, 0, 0);
+  }
+.header-text{
+    float: inline-start;
   }
   
   
 img#developer-alexis {
-  background-size: 150px;
-  width: 250px;
+  /* background-size: 175px; */
+  float: none;
+  width: 15%;
   height: auto;
-  border: 2px solid;
+  border: 3px solid;
   color:rgb(204, 181, 50);
 }
 blockquote.socrates {
@@ -42,13 +44,13 @@ blockquote.socrates {
 }
 form div+div {
     margin-top: 10px; /*<br>*/
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
 }
 .nav{
   background-color: none;
-  display:  inline-block;
-  margin-top: 12px;
-  margin-left: auto;
+  display: block;
+  margin-top: 15px;
+  /* margin-left: auto */
   float: none;
 }
 .menu-item {
@@ -65,7 +67,8 @@ form div+div {
   height: 100%;
 }
 .menu-item:hover{
-  background-color: bisque;
+  background-color: rgba(255, 228, 196, 0.495);
+  text-decoration: none;
 }
 a:link{
   text-decoration: none;
@@ -75,4 +78,15 @@ a:visited{
 }
 a:hover{
   text-decoration: underline;
+}
+.border{
+  border-top: 4px solid #146363e2;
+}
+.border1{
+  border-top: 4px solid #146363e2;
+  margin-top: 2px;
+}
+footer{
+  background-color:#14636367;
+  font-weight: bolder;
 }
