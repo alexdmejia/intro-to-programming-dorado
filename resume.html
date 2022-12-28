@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      /* Add some style to the page */
+      *{
+      background-color: rgba(255, 228, 196, 0.688);
+      color: black;
+      font-family:'Times New Roman', Times, serif;
+      }
+      body {
+        font-family: sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+      }
+
+      /* Define the typing animation, blink caret stops blinking cursor, steps(<number_of_steps>, <direction>)*/
+      .typing {
+        border-right: 0.15em solid #000;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        animation: typing 3.5s steps(500, end), blink-caret 0.45s step-end infinite;
+      }
+
+      /* Set the animation properties */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #000 }
+      }
+
+  button {
+    cursor: pointer; /* make the cursor a pointer to indicate that the button is clickable */
+  }
+
+  button:active {
+    /* style the button when it's being clicked */
+  }
+
+  button:hover {
+    /* style the button when it's hovered */
+    background-color: aquamarine;
+  }
+    </style>
+  </head>
+  <body>
+    <!-- Add a heading and a typed message -->
+    <h1>Hi There!!</h1>
+    <p class="typing">Welcome to my resume! <button type="button"<a href="intro-to-programming-dorado/index.html">CLICK MAYBE :)</a></button>
+    </p>
+  </body>
+</html>
