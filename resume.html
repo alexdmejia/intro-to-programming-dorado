@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
         <style>
             /* Add some style to the page */
             * {
@@ -65,6 +66,26 @@
             /* for no underline link  */
             a:link {
                 text-decoration: none;
+            }
+            /* Tablets */
+            @media(max-width: 1024px) {
+                body {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+            @media(max-width: 870px) {
+                body{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+            /* Phones */
+            @media(max-width: 540px) {
+                body {
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         </style>
     </head>
