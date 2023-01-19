@@ -121,6 +121,7 @@ footer{
   margin: 5px;
 }
 
+
 /* Tablets */
 @media (max-width: 1024px){
     body .nav .menu-item span{
