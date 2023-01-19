@@ -41,6 +41,7 @@ header {
     float: inline-start;
   }
 img#developer-alexis {
+  margin-bottom: 10px;
   float: none;
   width: 15%;
   height: auto;
@@ -110,13 +111,19 @@ footer{
 .socrates{
   font-size: 15px;
 }
-/* add media queries!!!! */
-/* how do i let the nav bar move down? */
-/* how to change to footer font size */
+/* style late */
+.projectDescription {
+  margin: 0;
+  list-style-type: none;
+  border: 3px solid #1463639c;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
 
 /* Tablets */
 @media (max-width: 1024px){
-    body .nav .menu-item #About span{
+    body .nav .menu-item span{
     display: flex;
     flex-wrap: wrap;
   } 
