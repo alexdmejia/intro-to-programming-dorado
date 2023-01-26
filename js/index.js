@@ -40,14 +40,36 @@ function removeMessage(e) {
 }
 
 //lesson-6-1
-var repositories = "";
-var githubRequest = new XMLHttpRequest();
-githubRequest.open("GET", "https://api.github.com/users/alexdmejia/repos");
-githubRequest.onload = function () {
-  repositories = JSON.parse(githubRequest.responseText);
+// var repositories = "";
+// var githubRequest = new XMLHttpRequest();
+// githubRequest.open("GET", "https://api.github.com/users/alexdmejia/repos");
+// githubRequest.onload = function () {
+//   repositories = JSON.parse(githubRequest.responseText);
+//   renderHtml(repositories);
+//   setTarget();
+// };
+
+
+// lesson 6-2 promises and API 
+const fetchRequest = fetch("https://api.github.com/users/alexdmejia/repos" , {
+  mode: 'cors',
+  method: 'GET',
+});
+//the variable returns a JSON
+fetchRequest.then((response) => {
+  if (!response.ok){
+    throw new Error ('Response status is not OK');
+  }
+  return response.json();
+}).then((repositories) => {
   renderHtml(repositories);
   setTarget();
-};
+}).catch((error) => {
+  console.error('Error Fetching : ' + error);
+});
+
+  
+
 
 //using DOM selector to connect with html element
 function renderHtml(repositories) {
@@ -62,7 +84,7 @@ function renderHtml(repositories) {
   }
   projectSection.appendChild(projectList);
 }
-githubRequest.send();
+// githubRequest.send();
 
 //open tags <a> in new window
 function setTarget() {
@@ -71,3 +93,6 @@ function setTarget() {
     targetBlank[i].setAttribute("target", "_blank");
   }
 }
+
+
+
