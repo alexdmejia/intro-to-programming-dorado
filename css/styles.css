@@ -81,7 +81,7 @@ img#developer-alexis {
 }
 form div+div {
     margin-top: 10px; /*<br>*/
-    margin-bottom: 10px; */
+    margin-bottom: 10px; 
 }
 .nav{
   background-color: none;
@@ -195,7 +195,7 @@ footer{
   font-weight: bolder;
   font-size: 13px;
   background-color:#14636367;
-  margin: 0 -100px -50px -100px;
+  margin: 0 -100px -500px -100px;
 }
 
 /* 
@@ -212,11 +212,14 @@ a:visited{
 }
 a:hover{
   text-decoration: underline;
-  text-decoration-color: rgb(204, 255, 0);
+  text-decoration-color:rgba(255, 228, 196, 0.495);
 }
 
-
-/* TRYING TPYING ANIMATION */
+/* 
+==================================
+=         TPYING ANIMATION         =
+==================================
+*/
 .header-text{
   border-right: 0.1em solid #000;
   white-space: nowrap;
@@ -243,7 +246,24 @@ a:hover{
         border-color: #000
     }
 }
+/* 
+==================================
+=         Scroll Animation        =
+==================================
+*/
 
+.hidden {
+  opacity: 0;
+  filter: blur(0.5px);
+  transform: translateX(-80%);
+  transition: all 2.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+} 
 
 
 /* 
@@ -295,3 +315,11 @@ a:hover{
     flex: 1 1 auto;
   }
 }
+/* ONLY SHOW SCROLL ANIMATION ONCE */
+
+@media(prefer-reduced-motion) {
+  .hidden{
+    transition: none;
+  }
+}
+ 
