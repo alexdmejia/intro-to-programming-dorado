@@ -68,9 +68,6 @@ fetchRequest.then((response) => {
   console.error('Error Fetching : ' + error);
 });
 
-  
-
-
 //using DOM selector to connect with html element
 function renderHtml(repositories) {
   var projectSection = document.querySelector("#Projects");
@@ -79,7 +76,7 @@ function renderHtml(repositories) {
   for (let i = 0; i < repositories.length; i++) {
     let project = document.createElement("li");
     //style more
-    project.innerHTML = `<a href = ${repositories[i].html_url} > ${repositories[i].name} </a> <p class = "projectDescription"> Description: ${repositories[i].description} </p>`;
+    project.innerHTML = `<a href = ${repositories[i].html_url} > ${repositories[i].name} </a> <p class = "projectDescription"> ${repositories[i].description} </p>`;
     projectList.appendChild(project);
   }
   projectSection.appendChild(projectList);
@@ -88,11 +85,24 @@ function renderHtml(repositories) {
 
 //open tags <a> in new window
 function setTarget() {
-  var targetBlank = document.querySelectorAll("section a");
+  let targetBlank = document.querySelectorAll("section a");
   for (let i = 0; i < targetBlank.length; i++) {
     targetBlank[i].setAttribute("target", "_blank");
   }
 }
 
+//adds burger icon to nav when it reaches smaller px
+let burgerIcon = document.getElementById("icon");
+  burgerIcon.addEventListener('click' , myIcon);
 
+  function myIcon () {
+    var x = document.getElementById("nav");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
+  };
+
+  
 
