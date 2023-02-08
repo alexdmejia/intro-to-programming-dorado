@@ -1,186 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <title>Alexis' Personal Portfolio</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1">
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <style>
+            /* Add some style to the page */
+            * {
+                background-color: rgba(255, 228, 196, 0.688);
+                color: black;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            body {
+                font-family: sans-serif;
+                text-align: center;
+                background-color: none;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin: 0.67em 0;
+                font-weight: bolder;
+            }
+
+            /* Define the typing animation, blink caret stops blinking cursor, steps(<number_of_steps>, <direction>)*/
+            .typing {
+                font-size: 18px;
+                font-weight: bold;
+                border-right: 0.15em solid #000;
+                white-space: nowrap;
+                overflow: hidden;
+                box-sizing: border-box;
+                animation: typing 3.5s steps(500, end), blink-caret 0.45s step-end infinite;
+            }
+
+            /* Set the animation properties */
+            @keyframes typing {
+                from {
+                    width: 0
+                }
+                to {
+                    width: 100%
+                }
+            }
+
+            @keyframes blink-caret {
+                from,
+                to {
+                    border-color: transparent
+                }
+                50% {
+                    border-color: #000
+                }
+            }
+
+            button {
+                cursor: pointer; /* make the cursor a pointer to indicate that the button is clickable */
+            }
+
+            button:active {
+                /* style the button when it's being clicked */
+            }
+
+            button:hover {
+                /* style the button when it's hovered */
+                background-color: aquamarine;
+            }
+            /* for no underline link  */
+            a:link {
+                text-decoration: none;
+            }
+        </style>
+        
     </head>
     <body>
-        <header>
-            <nav class="nav" id="nav">
-                <a class="menu-item" href="#About">
-                    <i class="fa-regular fa-address-card"></i>
-                    <span>About</span>
-                </a>
-                <a class="menu-item" href="#Experience">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <span>Experience</span>
-                </a>
-                <a class="menu-item" href="#Skills">
-                    <i class="fa-solid fa-hammer"></i>
-                    <span>Skills</span>
-                </a>
-                <a class="menu-item" href="#Connect">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>Connect</span>
-                </a>
-                <a class="menu-item icon" id="icon">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
-
-            <h1 class="header-text">Developer Alexis: CV</h1>
-            <!-- <address>
-                                                    <p class = "header-text">email: alexdmejia@gmail.com</p>
-                                                </address> -->
-            <img id="developer-alexis" src="css/developer-alexis.jpg" alt="Developer alexis smiling at camera">
-        </header>
-        <hr class="border1">
-
-        <section id="About" class="hidden">
-            <h1>About</h1>
-        <div class="about">
-            <p >
-                I am someone who is passionate about systems thinking and development, as well as a deep interest
-                                                                                                                                 in computer knowledge since a very early age. I was born in Honduras and moved to the US in 2013, I graduated from the University of Tennesee in Chattanooga in 2018 with a business and literature degree.
-                                                                                                                                 I have experience in coffee roasting management and development of small business design.</p>
-            <p>Currently, I am in the process of a career change into website and front-end development because it is an area 
-                                                                                                                                of teamwork and creativity which I particularly enjoy and feel passionate about. I am currenly enrolled with Code the 
-                                                                                                                                Dream, a free intensive training in software and website development that help people from low-income and under-represented backgrounds.
-            </p>
-        </div>
-        </section>
-
-        <section class="hidden">
-            <h1 id="Experience">Experience</h1>
-            <p>
-                <ul class="experience">
-                    <li>
-                        <span>Velo Coffee Roaster | Cold Brew Production and Wholesale Liason</span>
-                        <span>Mid 2016-2018</span>
-                    </li>
-                    <li>
-                        <span>Amethyst Coffee Company | Barista and Manager of Production
-                        </span>
-                        <span>2019-2021</span>
-                    </li>
-                    <li>
-                        <span>First Crack Coffee | Facility Assistant Manager
-                        </span>
-                        <span>2021-2022</span>
-                    </li>
-                </ul>
-            </p>
-
-        </section>
-
-        <section id="Skills" class="hidden">
-            <h2>Skills</h2>
-            <ul class="skillslist"></ul>
-        </section>
-
-        <section id="Projects" class="hidden">
-            <h2>Projects</h2>
-            <ul></ul>
-        </section>
-
-        <section id="Connect" class="hidden">
-            <!-- <h1>Connect</h1>
-            <p>
-                <ul>
-                    <li>
-                        <a href="https://github.com/alexdmejia">
-                            <i class="fa-brands fa-github"></i>
-                            Github</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="mailto:alexdmejia1@gmail.com">
-                            <i class="fa-solid fa-envelope-open-text"></i>
-                            E-mail</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="https://www.strava.com/athletes/69738656">
-                            <i class="fa-brands fa-strava"></i>
-                            Strava</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/alexis-mejia-862759117/"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
-                </ul>
-
-            </p>
-        </section> -->
-
-
-        <section class="hidden">
-            <h2>Leave a Message</h2>
-            <div class="form">
-                <form name="leave_message">
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-
-                    <div>
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message" required ></textarea>
-                    </div>
-
-
-                    <div>
-                        <button type="submit" id="submitButton">Submit Message</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section id="messages">
-            <h2>Messages</h2>
-            <ul></ul>
-
-        </section>
-        <hr class="border">
-        <footer id="footer-box" >
-            <p class="myName">
-                <script src="js/index.js" type="text/javascript"> </script>
-                <div>
-                    <ul class="socials" id="Connect">
-                        <a href="https://github.com/alexdmejia">
-                            <i class="fa-brands fa-github"> &nbsp </i>
-                        </a>
-                        <a href="mailto:alexdmejia1@gmail.com">
-                            <i class="fa-solid fa-envelope-open-text"> &nbsp </i>
-                        </a>
-                        <a href="https://www.strava.com/athletes/69738656">
-                            <i class="fa-brands fa-strava"> &nbsp </i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/alexis-mejia-862759117/">
-                            <i class="fa-brands fa-linkedin"> &nbsp</i>
-                        </a>
-                    </ul>
-                </div>
-            </p>
-        </footer>
-            
-            <div class="socrates" class="hidden">
-                <blockquote>
-                    <q>The unexamined life is not worth living
-                    </q>
-                        <a href="https://medium.com/@muditdeveloper/socrates-the-unexamined-life-is-not-worth-living-bebe9f36a19e" target="_blank"> -Socrates</a>
-                </blockquote>
-            </div>
+        <!-- Add a heading and a typed message -->
+        <h1>Hi There!!</h1>
+        <p class="typing">Welcome to my resume!
+            <button>
+                <a href="resume.html">CLICK, MAYBE &#128527</a>
+            </button>
+        </p>
     </body>
-
 </html>
