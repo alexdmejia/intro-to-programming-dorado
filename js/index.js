@@ -107,12 +107,15 @@ let burgerIcon = document.getElementById("icon");
 // ==================================
 // =          SCROLL ANIMATION         =
 // ==================================
+
+//IO is a class that takes callback fnx, it observes multiple elements or entries at the same time, allowing the scroll animation.
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry)
     if(entry.isIntersecting) {
       entry.target.classList.add('show'); 
-    } else {
+    } 
+    else {
       entry.target.classList.remove('show');
     }
    });
